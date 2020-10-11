@@ -1,8 +1,8 @@
 import os
 import json
 import random
-from itertools import islice
 from flask import Flask, render_template, request
+from wtforms.validators import InputRequired
 
 app = Flask(__name__)
 app.secret_key = 'my-super-secret-phrase-I-dont-tell-this-to-nobody'
